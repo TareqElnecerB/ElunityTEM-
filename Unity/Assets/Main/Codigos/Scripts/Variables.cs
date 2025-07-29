@@ -11,6 +11,6 @@ public class Variables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print("Hola mundo");
     }
 }
