@@ -1,25 +1,32 @@
 using System;
 using UnityEngine;
+using TMPro;
 
 public class Variables : MonoBehaviour
 {
+    [Header("variables c#")]
     [SerializeField]
-   private int vida = 1;
+    private int vida = 1;
     [SerializeField]
-   private int puntaje = 200;
-    [SerializeField]    
-   private int nivel = 29;
-
-   public string nombre = "Roberto";
-    
-    private float tiempo = 6.5f;
+    private int puntaje = 200;
+    [SerializeField]
+    private int nivel = 29;
+    [SerializeField]
+    private float tiempo = 60.5f;
+    [SerializeField]
+    public string nombre = "Alejo";
     [SerializeField]
     private bool isAlive = true;
+
+    [Header("Variables unity")]
     [SerializeField]
-    public GameObject camera;
+    private TMP_Text mensaje;
+    
+
+    
     void Start()
     {
-        Debug.Log("hola mundo la k el trap de medallo");
+        mensaje.text = "Hola " + nombre + ", como estas?"; 
     }
 
     // Update is called once per frame
