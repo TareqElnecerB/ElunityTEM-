@@ -5,40 +5,47 @@ using TMPro;
 public class TallerVariables : MonoBehaviour
 {
     //Declarar las variables privadas y serializadas
+    // = aignar un valor ""==""comparar"
     [SerializeField]
-    private string nombre;
+    private string _nombre;
     [SerializeField]
-    private int vida = 10;
+    private int _vida = 10;
     [SerializeField]
-    private int tiempo = 60;
+    private int _tiempo = 60;
     [SerializeField]
-    private int puntos = 50;
+    private int _puntos = 50;
     [SerializeField]
-    private bool estaVivo = true;
+    private bool _estaVivo = true;
     [SerializeField]
-    private TMP_Text mensaje;
+    private TMP_Text _mensaje;
     [SerializeField]
-    private TMP_Text mensajeVida;
+    private TMP_Text _mensajeVida;
     [SerializeField]
-    private TMP_Text mensajePuntos;
+    private TMP_Text _mensajePuntos;
     [SerializeField]
-    private TMP_Text mensajetiempo;
+    private TMP_Text _mensajetiempo;
     [SerializeField]
-    private TMP_Text mensajeEstado;
+    private TMP_Text _mensajeEstado;
     [SerializeField]
     void Start()
     {
-        mensaje.text = "Hola jugador " + nombre;
-        mensajeVida.text = "Tu vida es: " + vida;
-        mensajePuntos.text = "Puntos que tienes : " + puntos;
-        mensajetiempo.text = "Tiempo : " + tiempo;
-        mensajeEstado.text = "Estado de vida" + estaVivo;
-            
+        _mensaje.text = "Nombre: " + _nombre;
+        _mensajeVida.text = "Vida:" + -_vida;
+        _mensajePuntos.text = "Puntos que tienes : " + _puntos;
+        _mensajetiempo.text = "Tiempo : " + _tiempo;
+        _mensajeEstado.text = "Estado de vida" + _estaVivo;
     }
 
     
     void Update()
     {
-        
+        if (_nombre=="Diego")
+        {
+            Debug.Log("Hablalo diegiño");
+        }
+        else
+        {
+            Debug.Log("hola señor");
+        }
     }
 }
