@@ -7,8 +7,8 @@ public class TrampaController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
-            Time.timeScale = 0f;
+            
+            Time.timeScale = 1f;
             SceneManager.LoadScene("Condicionales");
         }
     }

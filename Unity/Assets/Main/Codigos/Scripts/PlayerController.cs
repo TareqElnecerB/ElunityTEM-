@@ -24,9 +24,6 @@ public class PlayerController : MonoBehaviour
             rb2d.AddForce(v2 * fuerza);
             
         }
-        else
-        {
-            print("No imprimi la tecla espacio");
-        }
+
     }
 }
