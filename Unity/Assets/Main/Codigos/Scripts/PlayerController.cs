@@ -8,6 +8,10 @@ public class PlayerController : MonoBehaviour
     private Vector2 v2;
     [SerializeField]
     private float fuerza = 10;
+    [SerializeField]
+    private int vidaplayer;
+    [SerializeField]
+    private GameManager gameManager;
     private void Awake() // prepara todo antes del start
     {
         rb2d = GetComponent<Rigidbody2D>();
